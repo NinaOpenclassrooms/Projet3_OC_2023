@@ -1,0 +1,40 @@
+/* Header */
+#header__container {
+    width: 375px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    border: 6px solid yellow;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        width: 1440px;
+        height: 96px;
+        marin:auto;  
+    }
+}
+.header__location {
+    width: 375px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: $color-background-dark;
+    border: 6px solid green;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        width: 1440px;
+        height: 96px;
+        margin: auto;  
+    }
+}
+.location_dot_icon_container {
+    width: 12px;
+    height: 16px;
+}
+#header__form {
+    padding-left: 20px;
+}
+
+/* Main */
+
+/* Block */

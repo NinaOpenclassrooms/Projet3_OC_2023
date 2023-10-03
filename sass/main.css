@@ -1,0 +1,115 @@
+#header__form-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #EAEAEA;
+  border: none;
+}
+
+#header__title {
+  width: 375px;
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 6px solid red;
+  z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+  #header__title { /* tablettes et ordinateurs */
+    width: 1440px;
+    height: 96px;
+  }
+}
+
+.header__goback-icon {
+  width: 30px;
+  height: 30px;
+  border: 3px solid purple;
+  margin: auto;
+}
+.header__goback-icon-homepage {
+  position: absolute;
+  visibility: hidden;
+}
+
+.fa-solid.fa-arrow-left {
+  width: 17.2px;
+  height: 16px;
+  margin-left: 4px;
+  margin-top: 4px;
+  border: 3px solid blue;
+  position: absolute;
+  z-index: 2;
+}
+.fa-solid.fa-arrow-left:visited {
+  color: black;
+}
+.fa-solid.fa-arrow-left:active {
+  color: black;
+}
+
+#header__logo {
+  width: 197px;
+  height: 36px;
+  margin-left: 89px; /* A MODIFIER? */
+  margin-right: 89px; /* A MODIFIER? */
+  border: 3px solid brown;
+}
+@media only screen and (min-width: 768px) {
+  #header__logo { /* tablettes et ordinateurs */
+    width: 200px;
+    height: 34.2px;
+    margin-left: 620px; /* A MODIFIER? */
+    margin-right: 620px; /* A MODIFIER? */
+  }
+}
+
+/* Header */
+#header__container {
+  width: 375px;
+  height: 113px;
+  display: flex;
+  flex-direction: column;
+  border: 6px solid yellow;
+}
+@media only screen and (min-width: 768px) {
+  #header__container { /* tablettes et ordinateurs */
+    width: 1440px;
+    height: 96px;
+    marin: auto;
+  }
+}
+
+.header__location {
+  width: 375px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #EAEAEA;
+  border: 6px solid green;
+}
+@media only screen and (min-width: 768px) {
+  .header__location { /* tablettes et ordinateurs */
+    width: 1440px;
+    height: 96px;
+    margin: auto;
+  }
+}
+
+.location_dot_icon_container {
+  width: 12px;
+  height: 16px;
+}
+
+#header__form {
+  padding-left: 20px;
+}
+
+/* Main */
+/* Block *//*# sourceMappingURL=main.css.map */
