@@ -1,3 +1,29 @@
+h9 { /* Oh my food */
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-typography-footer;
+}
+h10 { /* Proposer un restaurant & Devenir partenaire */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-typography-footer;
+}
+h11 { /* Mentions légales & Contact */
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color-typography-footer;    
+}
+
 #header__form-placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;

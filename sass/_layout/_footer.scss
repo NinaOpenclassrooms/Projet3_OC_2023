@@ -1,0 +1,65 @@
+footer {
+    width: 100%;
+    min-height: 186px;  
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 25px;
+    gap: 16px;
+    background-color: $color-background-footer;
+    .footer__container {
+        width: 375px;
+        margin: 22px, 25px, 22px, 25px;
+        border: 3px solid greenyellow;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            width: 100%;
+            height: auto;
+            max-width: 1440px;
+            max-height: 114px;
+            display: flex;
+            flex-direction: row-reverse; /* A REVOIR, NE VA PAS A LA LIGNE ENTRE MOBILE ET DESKTOP */
+            justify-content: flex-start;
+            align-items: baseline;
+            padding: 30px 25px;
+            gap: 16px;
+            isolation: isolate;
+            margin:auto;
+        }
+    }
+    .footer__title {
+        width: 139px;
+        height: 27px;
+    }
+    li {
+        list-style: none;
+        a:link {
+            text-decoration: none;
+        }
+    }
+    ul {
+        padding-left: 0px;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            display:flex;
+            flex-direction: row;
+        }
+    }
+    .footer__list-element {
+        width: 190px;
+        gap: 16px;
+        margin-left: 0px;
+        .footer__list-element-bold { /* NE FONCTIONNE PAS */
+            height: 20px;
+            color:red;
+        }
+        .footer__list-element-normal { /* NE FONCTIONNE PAS */
+            height: 19px;
+            color:blue;
+        }
+    }
+    .fa-solid.fa-utensils, .fa-solid.fa-handshake-simple {
+        font-size: 12px;
+        color: $color-typography-footer;
+        padding-right: 10px;
+    }
+}
