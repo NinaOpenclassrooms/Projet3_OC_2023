@@ -1,10 +1,59 @@
-h9 { /* Oh my food */
+h1 {
+
+}
+h2 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: $color-typo-title-hero;
+}
+h3 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:$color-typo-paragraph-hero;
+}
+h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color-typo-nav;
+}
+h5 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: $color-typo-homepage-restaurants;
+}
+h6 {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: $color-typo-homepage-restaurants;
+}
+h9 { /* Oh my food du footer*/
     font-family: 'Shrikhand';
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    color: $color-typography-footer;
+    color: $color-typo-footer;
 }
 h10 { /* Proposer un restaurant & Devenir partenaire */
     font-family: 'Roboto';
@@ -12,7 +61,7 @@ h10 { /* Proposer un restaurant & Devenir partenaire */
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: $color-typography-footer;
+    color: $color-typo-footer;
 }
 h11 { /* Mentions légales & Contact */
     font-family: Roboto;
@@ -21,7 +70,7 @@ h11 { /* Mentions légales & Contact */
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color: $color-typography-footer;    
+    color: $color-typo-footer;    
 }
 
 #header__form-placeholder {
@@ -30,6 +79,6 @@ h11 { /* Mentions légales & Contact */
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    background-color: $color-background-dark;
+    background-color: $color-background-header-location;
     border: none;
 }

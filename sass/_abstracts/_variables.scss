@@ -1,6 +1,32 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-background-dark:#EAEAEA;
+
+/* Header */
+$color-background-header-location:#EAEAEA;
+
+/* Main */
+$color-background-homepage: #F6F6F6;
+/* Hero */
+$color-typo-title-hero: #000000; 
+$color-typo-paragraph-hero: #353535;
+
+/* Buttons */
+$color-typo-btn-validate: #FFFFFF;
+$color-background-btn-validate:  linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+
+/* Navigation Block */
+$color-typo-nav:#000000;
+$color-number-nav:#FFFFFF;
+$color-inactive-icon-nav: #7E7E7E;
+$color-background-nav:#FFFFFF;
+$color-shadow-nav: #00000026;
+
+/* Restaurants Block */
+$color-typo-homepage-restaurants:#000000;
+
+
+
+/* Footer */
 $color-background-footer: #353535;
-$color-typography-footer: white;
+$color-typo-footer: white;
