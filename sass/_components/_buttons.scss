@@ -17,4 +17,22 @@
 .btn-like {
     width: 22px;
     height: 21px;
+    position: relative;
+    left: 10px;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        position: relative;
+        left: 160px;
+    }
+    .btn-like-unselected {
+        z-index: 2;
+        fill: white;
+    &:hover {
+        visibility: hidden; /* NE FONCTIONNE PAS */
+    }
+    }
+    .btn-like-selected {
+        z-index: 1;
+        fill: $color-primary;
+        stroke:none;
+    }
 }

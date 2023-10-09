@@ -1,4 +1,4 @@
-/* Header */
+/* Header Homepage*/
 #header__container {
     width: 100%;
     height: 113px;
@@ -53,57 +53,81 @@ main {
 
 /* Restaurants Block */
 #restaurants {
+    padding-bottom: 80px;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+    }
     .restaurants__title {
         margin-left: 20px;
     }
     .restaurants__cards-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 25px;
+        justify-content: space-between;
+        column-gap: 100px;
+        row-gap: 50px;
+        margin: auto;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            max-width: 1080px;
+            max-height: 552px;
+        }
     }
     .restaurants__card {
-        width: 600px;
-        height: 600px;
+        width: 340px;
+        height: 251px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         overflow: hidden;
         border-radius: 15px;
         margin: auto;
-        border: 3px solid yellow;
-        a {
-            width: 100%;
-            height: 100%;
-            text-decoration: none;
-            padding-bottom:0px;
-            border: 3px solid violet;
+        background-color: $color-background-homepage-restaurants;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            width: 490px;
         }
+        a {
+            text-decoration: none;
+        }
+    }
+    .image-link {
+        width: 100%;
+        height: 230px;
     }
     .restaurants__card-image {
-        width: 346px;
+        width: 100%;
+        height: 230px;
         object-fit: cover;
-        margin-bottom: 0px;
-
-        border: 3px solid brown;
-        img {
-            border: 3px solid orange;
-        }
+        overflow: hidden;
+        position: relative;
+        bottom: 57px;
     }
     .restaurants__card-body {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
-        margin-top: 0px;
-        border: 3px solid red;
+        align-items: center;
+        position: relative;
+        bottom: 45px; /* A MODIFIER?*/
     }
     .restaurants__card-text {
         display: flex;
         flex-direction: column;
-        border: 3px solid blue;
+        align-items:flex-start;
+        justify-content: space-between;
+        margin-left: 13px;
         h5 {
-            border: 3px solid black;
+            width: 267px;
+            height: 20px;
+            margin-bottom: 5px;
+            margin-top: 5px;
         }
         h6 {
-            border: 3px solid black;
+            width: 247px;
+            height: 24px;
+            margin: 0px;
         }
     }
 }

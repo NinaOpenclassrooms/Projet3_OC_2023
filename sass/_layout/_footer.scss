@@ -10,8 +10,7 @@ footer {
     background-color: $color-background-footer;
     .footer__container {
         width: 375px;
-        margin: 22px, 25px, 22px, 25px;
-        border: 3px solid greenyellow;
+        margin: 22px 25px 22px 25px;
         @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
             width: 100%;
             height: auto;
@@ -46,20 +45,17 @@ footer {
     }
     .footer__list-element {
         width: 190px;
-        gap: 16px;
-        margin-left: 0px;
-        .footer__list-element-bold { /* NE FONCTIONNE PAS */
-            height: 20px;
-            color:red;
-        }
-        .footer__list-element-normal { /* NE FONCTIONNE PAS */
-            height: 19px;
-            color:blue;
-        }
+        margin-left: 4px;
     }
-    .fa-solid.fa-utensils, .fa-solid.fa-handshake-simple {
+    .fa-solid.fa-utensils, .fa-solid.fa-handshake-angle {
         font-size: 12px;
         color: $color-typo-footer;
-        padding-right: 10px;
+        padding-right: 8px;
+        padding-left: 2px;
+    }
+    .footer__list-element-normal {
+        width: 130px;
+        height: 20px;
     }
 }
+

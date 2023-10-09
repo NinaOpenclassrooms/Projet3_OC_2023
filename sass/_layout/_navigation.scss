@@ -20,7 +20,8 @@
     .navigation__card-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 25px;
+        align-items: flex-start;
+        gap: 40px;
         margin-left: 32.5px;
     }
     .navigation__card {
@@ -29,7 +30,6 @@
         border-radius: 20px;
         background-color: $color-background-homepage;
         box-shadow: 0px 4px 15px 0px $color-shadow-nav;
-        margin: auto;
         .navigation__card-number {
             width: 24px;
             height: 24px;

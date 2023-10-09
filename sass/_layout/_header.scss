@@ -5,6 +5,7 @@
     flex-direction: row;
     align-items: center;
     z-index: 1;
+    margin: auto;
     @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
         width: auto;
         height: auto;
@@ -37,13 +38,7 @@
     }
 }
 #header__logo {
-    width: 197px;
+    width: 200px;
     height: 36px;
-    border: 3px solid green; /* TEXTE A RETRECIR OU A METTRE EN LETTRES */
     margin: auto;
-    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-        width: 200px;
-        height: 34.2px;  
-        border: 3px solid red;
-    }
 }

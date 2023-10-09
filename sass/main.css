@@ -6,6 +6,21 @@
 /* Navigation Block */
 /* Restaurants Block */
 /* Footer */
+h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  h1 { /* tablettes et ordinateurs */
+    font-size: 36px; /* N'EST PAS SPECIFIE DANS LA MAQUETTE */
+  }
+}
+
 h2 {
   font-family: Roboto;
   font-size: 24px;
@@ -102,6 +117,7 @@ h11 { /* Mentions légales & Contact */
   flex-direction: row;
   align-items: center;
   z-index: 1;
+  margin: auto;
 }
 @media only screen and (min-width: 768px) {
   #header__title { /* tablettes et ordinateurs */
@@ -138,17 +154,9 @@ h11 { /* Mentions légales & Contact */
 }
 
 #header__logo {
-  width: 197px;
+  width: 200px;
   height: 36px;
-  border: 3px solid green; /* TEXTE A RETRECIR OU A METTRE EN LETTRES */
   margin: auto;
-}
-@media only screen and (min-width: 768px) {
-  #header__logo { /* tablettes et ordinateurs */
-    width: 200px;
-    height: 34.2px;
-    border: 3px solid red;
-  }
 }
 
 /* Navigation Block */
@@ -176,7 +184,8 @@ h11 { /* Mentions légales & Contact */
 #navigation .navigation__card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  align-items: flex-start;
+  gap: 40px;
   margin-left: 32.5px;
 }
 #navigation .navigation__card {
@@ -185,7 +194,6 @@ h11 { /* Mentions légales & Contact */
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  margin: auto;
 }
 #navigation .navigation__card .navigation__card-number {
   width: 24px;
@@ -253,8 +261,7 @@ footer {
 }
 footer .footer__container {
   width: 375px;
-  margin: 22px, 25px, 22px, 25px;
-  border: 3px solid greenyellow;
+  margin: 22px 25px 22px 25px;
 }
 @media only screen and (min-width: 768px) {
   footer .footer__container { /* tablettes et ordinateurs */
@@ -293,21 +300,17 @@ footer ul {
 }
 footer .footer__list-element {
   width: 190px;
-  gap: 16px;
-  margin-left: 0px;
+  margin-left: 4px;
 }
-footer .footer__list-element .footer__list-element-bold { /* NE FONCTIONNE PAS */
-  height: 20px;
-  color: red;
-}
-footer .footer__list-element .footer__list-element-normal { /* NE FONCTIONNE PAS */
-  height: 19px;
-  color: blue;
-}
-footer .fa-solid.fa-utensils, footer .fa-solid.fa-handshake-simple {
+footer .fa-solid.fa-utensils, footer .fa-solid.fa-handshake-angle {
   font-size: 12px;
   color: white;
-  padding-right: 10px;
+  padding-right: 8px;
+  padding-left: 2px;
+}
+footer .footer__list-element-normal {
+  width: 130px;
+  height: 20px;
 }
 
 .btn-validate {
@@ -330,16 +333,37 @@ footer .fa-solid.fa-utensils, footer .fa-solid.fa-handshake-simple {
 .btn-like {
   width: 22px;
   height: 21px;
+  position: relative;
+  left: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .btn-like { /* tablettes et ordinateurs */
+    position: relative;
+    left: 160px;
+  }
+}
+.btn-like .btn-like-unselected {
+  z-index: 2;
+  fill: white;
+}
+.btn-like .btn-like-unselected:hover {
+  visibility: hidden; /* NE FONCTIONNE PAS */
+}
+.btn-like .btn-like-selected {
+  z-index: 1;
+  fill: #9356DC;
+  stroke: none;
 }
 
 .nouveau {
   width: 80px;
   height: 29px;
+  border-radius: 2px;
   color: #008766;
   background-color: #99E2D0;
   position: relative;
-  bottom: 150px;
-  left: 248px;
+  top: -235px;
+  right: -245px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -348,8 +372,19 @@ footer .fa-solid.fa-utensils, footer .fa-solid.fa-handshake-simple {
   text-align: center;
   line-height: 29px;
 }
+@media only screen and (min-width: 768px) {
+  .nouveau { /* tablettes et ordinateurs */
+    position: relative;
+    top: -235px;
+    right: -389px;
+  }
+}
 
-/* Header */
+.nouveau--hiden {
+  visibility: hidden;
+}
+
+/* Header Homepage*/
 #header__container {
   width: 100%;
   height: 113px;
@@ -407,56 +442,90 @@ main {
 }
 
 /* Restaurants Block */
+#restaurants {
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  #restaurants { /* tablettes et ordinateurs */
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 #restaurants .restaurants__title {
   margin-left: 20px;
 }
 #restaurants .restaurants__cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  justify-content: space-between;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 50px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  #restaurants .restaurants__cards-container { /* tablettes et ordinateurs */
+    max-width: 1080px;
+    max-height: 552px;
+  }
 }
 #restaurants .restaurants__card {
-  width: 600px;
-  height: 600px;
+  width: 340px;
+  height: 251px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   overflow: hidden;
   border-radius: 15px;
   margin: auto;
-  border: 3px solid yellow;
+  background-color: #FFFFFF;
+}
+@media only screen and (min-width: 768px) {
+  #restaurants .restaurants__card { /* tablettes et ordinateurs */
+    width: 490px;
+  }
 }
 #restaurants .restaurants__card a {
-  width: 100%;
-  height: 100%;
   text-decoration: none;
-  padding-bottom: 0px;
-  border: 3px solid violet;
+}
+#restaurants .image-link {
+  width: 100%;
+  height: 230px;
 }
 #restaurants .restaurants__card-image {
-  width: 346px;
+  width: 100%;
+  height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 0px;
-  border: 3px solid brown;
-}
-#restaurants .restaurants__card-image img {
-  border: 3px solid orange;
+  overflow: hidden;
+  position: relative;
+  bottom: 57px;
 }
 #restaurants .restaurants__card-body {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 0px;
-  border: 3px solid red;
+  align-items: center;
+  position: relative;
+  bottom: 45px; /* A MODIFIER?*/
 }
 #restaurants .restaurants__card-text {
   display: flex;
   flex-direction: column;
-  border: 3px solid blue;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 13px;
 }
 #restaurants .restaurants__card-text h5 {
-  border: 3px solid black;
+  width: 267px;
+  height: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 #restaurants .restaurants__card-text h6 {
-  border: 3px solid black;
+  width: 247px;
+  height: 24px;
+  margin: 0px;
 }/*# sourceMappingURL=main.css.map */

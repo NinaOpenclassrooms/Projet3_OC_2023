@@ -1,11 +1,12 @@
 .nouveau {
     width: 80px;
     height: 29px;
+    border-radius: 2px;
     color: #008766;
     background-color:#99E2D0;
     position: relative;
-    bottom: 150px;
-    left: 248px;
+    top: -235px;
+    right: -245px;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -13,4 +14,12 @@
     letter-spacing: 0em;
     text-align: center;
     line-height: 29px;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        position: relative;
+        top: -235px;
+        right: -389px;
+    }
+}
+.nouveau--hiden {
+    visibility: hidden;
 }
