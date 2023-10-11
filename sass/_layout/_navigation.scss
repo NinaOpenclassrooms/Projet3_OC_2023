@@ -1,14 +1,16 @@
 /* Navigation Block */
 #navigation {
-    min-width: 375px;
     background-color: $color-background-nav;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 44px;
-    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-        width: 100%;
-        max-width: 1440px;
-        margin: auto;
+    .navigation__container {
+        min-width: 375px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 44px;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
     }
     .navigation__title {
         width: 275px;
@@ -20,9 +22,13 @@
     .navigation__card-container {
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
+        justify-content: center;
         gap: 40px;
         margin-left: 32.5px;
+        margin-right: 32.5px;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            justify-content: flex-start;
+        }
     }
     .navigation__card {
         width: 335px;

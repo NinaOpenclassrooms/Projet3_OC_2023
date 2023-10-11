@@ -3,6 +3,7 @@
 @import './_abstracts/mixins';
 
 @import './_base/typography';
+@import './_base/animations';
 
 @import './_layout/header';
 @import './_layout/navigation';
@@ -12,3 +13,4 @@
 @import './_components/cover';
 
 @import './_pages/home';
+@import './_pages/menu';

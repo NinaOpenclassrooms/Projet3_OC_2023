@@ -29,7 +29,7 @@ main {
 }
 /* Hero Block */
 #hero {
-    height: 300px; /* A MODIFIER MAIS AUTO NE FONCTIONNE PAS */
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +49,10 @@ main {
         margin:auto;
         top: 220px;
     }
+    .hero__btn-validate {
+        position: absolute;
+        top: 293px;
+    }
 }
 
 /* Restaurants Block */
@@ -61,6 +65,7 @@ main {
     }
     .restaurants__title {
         margin-left: 20px;
+        margin-top: 48px;
     }
     .restaurants__cards-container {
         display: flex;
