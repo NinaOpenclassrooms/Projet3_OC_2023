@@ -40,3 +40,23 @@
         stroke:none;
     }
 }
+.heart {
+    vertical-align: middle;
+    font-size: 20px;
+}
+.heart-full {
+    font-size: 20px;
+    background: $color-background-btn-validate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+}
+.heart-empty {
+    font-size: 20px;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 2;
+}

@@ -1,4 +1,5 @@
-h1 { 
+/* Header */
+h1 { /* Logo */
     font-family: Shrikhand;
     font-size: 30px;
     font-style: italic;
@@ -7,10 +8,12 @@ h1 {
     letter-spacing: 0em;
     text-align: center;
     @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-        font-size: 36px; /* N'EST PAS SPECIFIE DANS LA MAQUETTE */
+        font-size: 36px;
     }
 }
-h2 {
+/* Main */
+/* Hero Block */
+h2 { /* Réservez le menu..., Fonctionnement & Restaurants */ /* OK DE GARDER UN H2 GENERAL POUR PLUSIEURS BLOCS? */
     font-family: Roboto;
     font-size: 24px;
     font-weight: 700;
@@ -18,44 +21,53 @@ h2 {
     letter-spacing: 0em;
     color: $color-typo-title-hero;
 }
-h3 {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    color:$color-typo-paragraph-hero;
+.hero {
+    h3 {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color:$color-typo-paragraph-hero;
+    }
 }
-h4 {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $color-typo-nav;
+/* Navigation Block */
+.navigation__card {
+    span {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color-typo-nav;
+    }
 }
-h5 {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: $color-typo-homepage-restaurants;
+/* Restaurants Block */
+.restaurants__card {
+    h3 {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        color: $color-typo-homepage-restaurants;
+    }
+    h4 {
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        color: $color-typo-homepage-restaurants;
+    }
 }
-h6 {
-    font-family: Roboto;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: $color-typo-homepage-restaurants;
-}
+
 h7 { /* Titres page Menu*/
     font-family: Shrikhand;
     font-size: 28px;
