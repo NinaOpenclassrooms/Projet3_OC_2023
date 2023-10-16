@@ -1,12 +1,15 @@
+/* General */
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-background:#F6F6F6;
 
 /* Header */
 $color-background-header-location:#EAEAEA;
+$color-shadow: rgba(0, 0, 0, 0.25);
 
+/* Homepage */
 /* Main */
-$color-background-homepage: #F6F6F6; /* JUSTE METTRE BACKGROUND? */
 /* Hero */
 $color-typo-title-hero: #000000; 
 $color-typo-paragraph-hero: #353535;
@@ -14,25 +17,20 @@ $color-typo-paragraph-hero: #353535;
 /* Buttons */
 $color-typo-btn-validate: #FFFFFF;
 $color-background-btn-validate:  linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
-$color-shadow-btn-validate: rgba(0, 0, 0, 0.25);
 $color-shadow-btn-validate-dark: rgba(0, 0, 0, 0.7);
 
-/* Navigation Block */
-$color-typo-nav:#000000;
-$color-number-nav:#FFFFFF;
-$color-inactive-icon-nav: #7E7E7E;
-$color-background-nav:#FFFFFF;
-$color-shadow-nav: #00000026;
+/* Tuto Block */
+$color-typo-tuto:#000000;
+$color-inactive-icon-tuto: #7E7E7E;
+$color-background-tuto:#FFFFFF;
 
 /* Restaurants Block */
 $color-typo-homepage-restaurants:#000000;
-$color-background-homepage-restaurants: #FFFFFF;
 
-/* Menus Block */
-$color-background-menu: #F6F6F6; /* JUSTE METTRE BACKGROUND? */
+/* Menu page */
+/* Main */
+/* Menu Block */
 $color-typo-menu: rgba(0, 0, 0, 1);
-
-
 
 /* Footer */
 $color-background-footer: #353535;

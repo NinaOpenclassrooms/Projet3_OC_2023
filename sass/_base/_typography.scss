@@ -11,6 +11,8 @@ h1 { /* Logo */
         font-size: 36px;
     }
 }
+
+/* Homepage */
 /* Main */
 /* Hero Block */
 h2 { /* Réservez le menu..., Fonctionnement & Restaurants */ /* OK DE GARDER UN H2 GENERAL POUR PLUSIEURS BLOCS? */
@@ -32,8 +34,8 @@ h2 { /* Réservez le menu..., Fonctionnement & Restaurants */ /* OK DE GARDER UN
         color:$color-typo-paragraph-hero;
     }
 }
-/* Navigation Block */
-.navigation__card {
+/* Tuto Block */
+.tuto__card {
     span {
         font-family: Roboto;
         font-size: 16px;
@@ -41,7 +43,7 @@ h2 { /* Réservez le menu..., Fonctionnement & Restaurants */ /* OK DE GARDER UN
         line-height: 19px;
         letter-spacing: 0em;
         text-align: left;
-        color: $color-typo-nav;
+        color: $color-typo-tuto;
     }
 }
 /* Restaurants Block */
@@ -68,25 +70,73 @@ h2 { /* Réservez le menu..., Fonctionnement & Restaurants */ /* OK DE GARDER UN
     }
 }
 
-h7 { /* Titres page Menu*/
-    font-family: Shrikhand;
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 41px;
-    letter-spacing: 0em;
-    text-align: left;
+/* Menu page */
+/* Main */
+/* Menu Block */
+.menu {
+    &__title {
+        h2 {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 41px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+    &__subtitle { /* Entrées, Plats, Desserts */
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: $color-typo-menu;
+            
+    }
+    &__card {
+        &-left {
+            h4 { /* Nom du plat */
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $color-typo-menu;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow-wrap: normal;
+                overflow: hidden;
+            }
+            h5 { /* Précisions plat */
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $color-typo-menu;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow-wrap: normal;
+                overflow: hidden;
+            }
+            span { /* Prix */
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }
+    }
 }
-h8 { /* Titres Entrées, Plats, Desserts*/
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-transform: uppercase;
-    color: $color-typo-menu;
-}
+
+
 h9 { /* Oh my food du footer*/
     font-family: 'Shrikhand';
     font-style: italic;
@@ -111,40 +161,6 @@ h11 { /* Mentions légales & Contact */
     letter-spacing: 0em;
     text-align: left;
     color: $color-typo-footer;    
-}
-h12 { /* Nom du plat */
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $color-typo-menu;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-wrap: normal;
-    overflow: hidden;
-}
-h13 { /* Précisions plat */
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $color-typo-menu;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-wrap: normal;
-    overflow: hidden;
-}
-h14 { /* Prix */
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: center;
 }
 #header__form-placeholder {
     font-family: 'Roboto', sans-serif;

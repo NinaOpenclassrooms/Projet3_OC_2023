@@ -13,7 +13,7 @@
 }
 /* Main */
 main {
-    background-color: $color-background-homepage;
+    background-color: $color-background;
 }
 /* Hero Block */
 .hero {
@@ -22,107 +22,162 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $color-background-homepage;
+    background-color: $color-background;
     margin-bottom: 20px;
-    &__title {
-        width: 275px;
-        height: 68px;
+    &__title { 
+        width: 60%; /* EST-CE OK? */
         text-align: center;
         @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-            width: 645px;
-            height: 47px;
+            width: 100%;
             font-size: 40px;
+            line-height: 44px;
         }
     }
     &__paragraph {
-        width: 315px;
-        height: 46px;
+        width: 80%; /* EST-CE OK? */
         position: relative;
         bottom: 15px;
-        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-            width: 531px;
-            height: 46px;
-        }
     }
 }
-/* Restaurants Block */
-#restaurants {
-    padding-bottom: 80px;
-    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-        width: 100%;
-        max-width: 1440px;
-        margin: auto;
+/* Tuto Block */
+.tuto {
+    background-color: $color-background-tuto;
+    &__container {
+        @include flex-column;
+        padding-bottom: 44px;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
     }
     &__title {
+        margin-top: 40px;
         margin-left: 20px;
-        margin-top: 48px;
+        margin-bottom: 26px;
     }
     &__cards-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-left: 32.5px;
+        margin-right: 32.5px;
+        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+            justify-content: flex-start;
+        }
+    }
+    &__card {
+        width: 322px;
+        height: 72px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 20px;
+        background-color: $color-background;
+        box-shadow: 0px 4px 15px 0px $color-shadow;
+        &-number {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $color-primary;
+            border-radius: 50%;
+            z-index: 2;
+            position: relative;
+            right: 12px;
+            span {
+                display:inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 15px;
+                height: 15px;
+                color: white;
+            }
+        }
+        &-icon {
+            width: 13px;
+            height: 20px;
+            color: $color-inactive-icon-tuto;
+            font-size: 21px;
+            padding-left: 15px;
+        }
+        &-text {
+            padding-left: 30px;
+        }
+        &:hover {
+            .tuto__card-icon {
+                color: $color-primary; 
+            }
+        }
+
+    }
+}
+/* Restaurants Block */
+.restaurants {
+    padding-bottom: 80px;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    &__title {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-bottom: 26px;
+    }
+    &__cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
         column-gap: 100px;
         row-gap: 50px;
         margin: auto;
-        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-            max-width: 1080px;
-            max-height: 552px;
+        a {
+            width: 600px;
+            height: 600px;
+            text-decoration: none;
+            border: 3px solid red;
         }
     }
-    .restaurants__card {
+    &__card {
         width: 340px;
         height: 251px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        gap: 0px;
         overflow: hidden;
         border-radius: 15px;
-        margin: auto;
-        background-color: $color-background-homepage-restaurants;
-        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-            width: 490px;
+        background-color: white;
+        border: 3px solid black;
+        &-image {
+            width: 341px;
+            height: 170px;
+            display: inline-block;
+            object-fit: cover;
+            z-index: 1;
         }
-        a {
-            text-decoration: none;
+        &-body {
+            width: 340px;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 13px;
         }
-    }
-    .image-link {
-        width: 100%;
-        height: 230px;
-    }
-    .restaurants__card-image {
-        width: 100%;
-        height: 230px;
-        object-fit: cover;
-        overflow: hidden;
-        position: relative;
-        bottom: 57px;
-    }
-    .restaurants__card-body {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-        bottom: 45px; /* A MODIFIER?*/
-    }
-    .restaurants__card-text {
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        justify-content: space-between;
-        margin-left: 13px;
-        h5 {
-            width: 267px;
-            height: 20px;
-            margin-bottom: 5px;
-            margin-top: 5px;
-        }
-        h6 {
-            width: 247px;
-            height: 24px;
-            margin: 0px;
+        &-text {
+            width: 250px;
+            height: 45px;
+            @include flex-column;
+            justify-content: space-between;
+            padding-top: 10px;
+            h3 {
+                margin: 0px;
+            }
+            h4 {
+                margin: 0px;
+            }
+
         }
     }
 }

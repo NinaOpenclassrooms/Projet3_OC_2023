@@ -18,5 +18,8 @@
     }
  }
  @keyframes selection-tick {
+   to {
+      transform: translateX(-100%)
+   }
 
 }
