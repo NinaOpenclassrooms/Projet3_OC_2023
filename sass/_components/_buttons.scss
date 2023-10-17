@@ -18,26 +18,6 @@
         box-shadow: 0px 4px 10px 0px $color-shadow-btn-validate-dark;
     }
 }
-.btn-like {
-    width: 22px;
-    height: 21px;
-    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-        position: relative;
-        left: 170px;
-    }
-    .btn-like-unselected {
-        z-index: 2;
-        fill: white;
-    &:hover {
-        visibility: hidden; /* NE FONCTIONNE PAS */
-    }
-    }
-    .btn-like-selected {
-        z-index: 1;
-        fill: $color-primary;
-        stroke:none;
-    }
-}
 .heart {
     width: 50px;
     height: 50px;
@@ -66,15 +46,15 @@
             }
         }
     }
-}
-.heart-full {
-    background: $color-background-btn-validate;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0;
-    z-index: 1;
-}
-.heart-empty {
-    z-index: 2;
+    &-full {
+        background: $color-background-btn-validate;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        z-index: 1;
+    }
+    &-empty {
+        z-index: 2;
+    }
 }

@@ -21,5 +21,9 @@
    to {
       transform: translateX(-100%)
    }
-
-}
+ }
+ @keyframes price-translate {
+   to {
+      transform: translateX(-59px);
+   }
+ }

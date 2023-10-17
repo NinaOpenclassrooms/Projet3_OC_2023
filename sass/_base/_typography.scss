@@ -136,38 +136,32 @@ h2 { /* Réservez le menu..., Fonctionnement & Restaurants */ /* OK DE GARDER UN
     }
 }
 
+/* Footer */
+footer {
+    h2 { /* Oh my food du footer*/
+        font-family: 'Shrikhand';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-typo-footer;
+    }
+    h3 { /* Proposer un restaurant & Devenir partenaire */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-typo-footer;
+    }
+    h4 { /* Mentions légales & Contact */
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color-typo-footer;    
+    }
+}
 
-h9 { /* Oh my food du footer*/
-    font-family: 'Shrikhand';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: $color-typo-footer;
-}
-h10 { /* Proposer un restaurant & Devenir partenaire */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: $color-typo-footer;
-}
-h11 { /* Mentions légales & Contact */
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $color-typo-footer;    
-}
-#header__form-placeholder {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    background-color: $color-background-header-location;
-    border: none;
-}
