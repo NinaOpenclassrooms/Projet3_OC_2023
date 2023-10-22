@@ -47,36 +47,15 @@
         }
     } 
     &__container-1 { /* REPETITIONS, A MODIFIER */
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-width: 349px;
-        min-height: 270px;
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        @include menu-container;
         animation: menu-appear 3s 1s both ease-out;
     }
     &__container-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-width: 349px;
-        min-height: 270px;
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        @include menu-container;
         animation: menu-appear 3s 2s both ease-out;
     }
     &__container-3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-width: 349px;
-        min-height: 270px;
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        @include menu-container;
         animation: menu-appear 3s 3s both ease-out;
     }
     &__subtitle {
@@ -84,7 +63,7 @@
         height: 24px;
         padding-left: 10px;
         margin: 0px;
-        &-border {
+        &-border { /* NOMENCLATURE A MODIFIER?*/
             width: 38px;
             height: 3px;
             background-color: $color-tertiary;
@@ -97,78 +76,6 @@
         align-items: center;
         gap: 25px;
         margin: 10px;
-    }
-    &__card {
-        width: 100%;
-        height: 69px;
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        border-radius: 15px;
-        background-color: white;
-        box-shadow: 0px 4px 15px 0px $color-shadow;
-        &:hover {
-            cursor: pointer;
-            .menu__card-right {
-                animation: selection-tick 1s 100ms forwards;
-                i {
-                    transform: rotate(360deg);
-                    transition: transform 1s 200ms;
-                }
-            }
-            .menu__card-text span {
-                animation: price-translate 1s 100ms forwards;
-            }
-        }
-        &-left {
-            width: 100%;
-            @include flex-column;
-            align-items: fle-start;
-            justify-content: space-between;
-            padding: 12px;
-            h4 {
-                width: 287px;
-                height: 21px;
-                margin: 0px;
-            }
-        }
-        &-text {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            h5 {
-                margin: 0px;
-            }
-            span {
-                width: 27px;
-                height: 18px;
-                margin: 0px;
-            }
-        }
-        &-right {
-            width: 59px;
-            height: 69px;
-            border-radius: 0px 15px 15px 0px;
-            background-color: $color-tertiary;
-            border: 1px solid $color-tertiary;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: -59px;
-            i {
-                width: 20px;
-                height: 20px;
-                color: $color-tertiary;
-                background-color: white;
-                border-radius: 50%;
-                padding: 4px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
     }
     &__btn-validate {
         width: 186px;

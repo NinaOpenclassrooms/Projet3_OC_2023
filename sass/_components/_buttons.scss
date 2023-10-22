@@ -1,12 +1,9 @@
+/* Validation button*/
 .btn-validate {
     width: 218px;
     height: 50px;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
     color: $color-typo-btn-validate;
     background: $color-background-btn-validate;
     border: none;
@@ -18,44 +15,49 @@
         box-shadow: 0px 4px 10px 0px $color-shadow-btn-validate-dark;
     }
 }
+
+/* Heart Like */
 .heart {
     width: 50px;
     height: 50px;
     display: inline-flex;
     align-items: center;
     font-size: 22px;
-    &:active {
-        .heart-full {
+    &:active, &:hover {
+        .hear__full {
             opacity: 1;
-            transition: opacity 800ms ease-out;  
+            transition: opacity 1s ease-out;  
         }
-        .heart-empty {
+        .heart__empty {
             opacity: 0;
-            transition: opacity 800ms ease-out; 
+            transition: opacity 500ms ease-out; 
         }
     }
     @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
         &:hover {
-            .heart-full {
+            .heart__full {
                 opacity: 1;
-                transition: opacity 800ms ease-out;  
+                transition: opacity 1s ease-out;
             }
-            .heart-empty {
+            .heart__empty {
                 opacity: 0;
-                transition: opacity 800ms ease-out; 
+                transition: opacity 500ms ease-out; 
             }
         }
     }
-    &-full {
+    &__full {
         background: $color-background-btn-validate;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
         z-index: 1;
+        transition: opacity 500ms ease-out;
     }
-    &-empty {
+    &__empty {
         color: black;
+        opacity: 1;
         z-index: 2;
+        transition: opacity 1s ease-out; 
     }
 }

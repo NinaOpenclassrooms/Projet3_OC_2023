@@ -1,0 +1,30 @@
+.spinner {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    &__ball1 {
+        @include spinner-ball;
+        background-color: $color-primary;
+        animation: loading-spinner 1.5s 0s ease-in-out forwards;
+        animation-iteration-count: 2;
+    }
+    &__ball2 {
+        @include spinner-ball;
+        background-color: $color-secondary;
+        animation: loading-spinner 1.5s 0.5s ease-in-out forwards;
+        animation-iteration-count: 2;
+    }
+    &__ball3 {
+        @include spinner-ball;
+        background-color: $color-tertiary;
+        animation: loading-spinner 1.5s 1s ease-in-out forwards;
+        animation-iteration-count: 2;
+    }
+}
