@@ -219,6 +219,8 @@ footer {
   .footer__container { /* tablettes et ordinateurs */
     flex-direction: row-reverse;
     align-items: last baseline;
+    max-width: 1440px;
+    margin: auto;
   }
 }
 .footer__container ul {
@@ -377,11 +379,19 @@ footer {
 /* Restaurants Block */
 /* Restaurant card */
 .card-restaurant {
-  width: 340px;
-  height: 251px;
+  width: 315px;
+  height: 232px;
   border-radius: 15px;
+  overflow: hidden;
   background-color: white;
   position: relative;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  .card-restaurant { /* tablettes et ordinateurs */
+    width: 490px;
+    height: 251px;
+  }
 }
 .card-restaurant a {
   width: 100%;
@@ -389,12 +399,6 @@ footer {
   text-decoration: none;
   border-radius: 15px;
   margin: auto;
-}
-@media only screen and (min-width: 768px) {
-  .card-restaurant a { /* tablettes et ordinateurs */
-    width: 490px;
-    height: 251px;
-  }
 }
 .card-restaurant__nouveau {
   width: 80px;
@@ -450,65 +454,58 @@ footer {
   height: 69px;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 .card-menu:hover {
   cursor: pointer;
 }
-.card-menu:hover .card-menu__tick {
-  animation: selection-tick 1s 100ms forwards;
+.card-menu:hover .card-menu__tick { /*NE DECALE PAS LA DIV DU PRIX*/
+  transform: translateX(-59px);
+  transition: transform 1s ease;
+  /*animation: selection-tick 1s 100ms forwards;*/
 }
 .card-menu:hover .card-menu__tick i {
   transform: rotate(360deg);
   transition: transform 1s 200ms;
 }
 .card-menu__text {
-  width: 95%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding: 12px;
 }
-.card-menu__text h4 {
-  width: 287px;
-  height: 21px;
-  margin: 0px;
-}
-.card-menu__text h5 {
+.card-menu__text h4, .card-menu__text h5 {
   margin: 0px;
 }
 .card-menu__price {
-  width: 5%;
+  width: 10%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  padding: 12px;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+  padding-right: 12px;
 }
 .card-menu__price span {
-  width: 27px;
-  height: 18px;
   margin: 0px;
 }
 .card-menu__tick {
   width: 59px;
-  height: 69px;
+  height: 100%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
-  border: 1px solid #99E2D0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: -59px;
-  transform: translateX(-30px) 100ms 1s forwards;
-  transition: 100ms 1s forwards;
+  transform: translateX(59px);
+  transition: transform 2s ease;
 }
 .card-menu__tick i {
-  width: 20px;
-  height: 20px;
   color: #99E2D0;
   background-color: white;
   border-radius: 50%;
@@ -519,7 +516,7 @@ footer {
 }
 
 /* Loading spinner*/
-header, main, footer {
+.header-homepage, .main-homepage, .footer-homepage {
   opacity: 0;
   animation: body-appear 1s 3s ease-in forwards;
 }
@@ -544,7 +541,7 @@ header, main, footer {
 }
 
 /* Main */
-main {
+.main-homepage { /* A MODIFIER?*/
   background-color: #F6F6F6;
 }
 
@@ -712,18 +709,15 @@ main {
   margin: auto;
 }
 .menu__title {
-  width: 341px;
+  width: 315px;
   height: 27px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 40px;
   margin: auto;
-}
-.menu__title h2 {
-  width: 341px;
-  height: 29px;
 }
 .menu__global-container {
   display: flex;

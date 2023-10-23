@@ -1,5 +1,5 @@
 /* Loading spinner*/
-header, main, footer {
+.header-homepage, .main-homepage, .footer-homepage {
     opacity: 0;
     animation: body-appear 1s 3s ease-in forwards;
 }
@@ -22,7 +22,7 @@ header, main, footer {
     }
 }
 /* Main */
-main {
+.main-homepage { /* A MODIFIER?*/
     background-color: $color-background;
 }
 /* Hero Block */
@@ -122,7 +122,6 @@ main {
                 color: $color-primary; 
             }
         }
-
     }
 }
 /* Restaurants Block */

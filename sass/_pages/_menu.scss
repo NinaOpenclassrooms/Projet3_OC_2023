@@ -23,18 +23,15 @@
     bottom: 15px;
     margin: auto;
     &__title {
-        width: 341px;
+        width: 315px;
         height: 27px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         padding-top: 32px;
         padding-bottom: 40px;
         margin: auto;
-        h2 {
-            width: 341px;
-            height: 29px;
-        }
     }
     &__global-container {
         display: flex;
