@@ -8,11 +8,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../sass/main.css">
-        <title>Oh my food</title>
+        <title>Ohmyfood</title>
     </head>
     <body>
         <!--Header-->
-        <header class="header__container">
+        <header>
             <div class="header__goback-icon">
                 <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
@@ -20,9 +20,9 @@
         </header>
         <!--Main-->
         <main>
-            <section class="hero-menu-page">
+            <div class="hero-menu-page">
                 <img class="hero-menu-page-image" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo restaurant La palette du goût">
-            </section>
+            </div>
             <!--Menu Block-->
             <div class="menu">
                 <div class="menu__title">
@@ -38,7 +38,7 @@
                         <div class="menu__subtitle-border">
                         </div>
                         <div class="menu__cards-container">
-                            <div class="card-menu">
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Fricassée d'escargot</h4>
                                     <h5>Au piment d'Espelette</h5>
@@ -49,8 +49,8 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
-                            <div class="card-menu">
+                            </article>
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Foie gras de canard mi-cuit</h4>
                                     <h5>Et ses copeaux de truffe noire</h5>
@@ -61,8 +61,8 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
-                            <div class="card-menu">
+                            </article>
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Oeuf au plat</h4>
                                     <h5>Assaisonné à la truffe sur lit de caviar</h5>
@@ -73,7 +73,7 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                     <div class="menu__container-2">
@@ -81,7 +81,7 @@
                         <div class="menu__subtitle-border">
                         </div>
                         <div class="menu__cards-container">
-                            <div class="card-menu">
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Filet de bœuf aux herbes</h4>
                                     <h5>Accompagné de sa ribambelle de légumes</h5>
@@ -92,8 +92,8 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
-                            <div class="card-menu">
+                            </article>
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Parmentier de queue de bœuf</h4>
                                     <h5>À la truffe noire sur sa purée de panais</h5>
@@ -104,8 +104,8 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
-                            <div class="card-menu">
+                            </article>
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Filet de turbot</h4>
                                     <h5>Aux agrumes</h5>
@@ -116,7 +116,7 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                     <div class="menu__container-3">
@@ -124,7 +124,7 @@
                         <div class="menu__subtitle-border">
                         </div>
                         <div class="menu__cards-container">
-                            <div class="card-menu">
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Paris-Brest</h4>
                                     <h5>Revisité</h5>
@@ -135,8 +135,8 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
-                            <div class="card-menu">
+                            </article>
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Macaron au chocolat d'exception </h4>
                                     <h5>Et glace à la vanille de Madagascar</h5>
@@ -147,8 +147,8 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
-                            <div class="card-menu">
+                            </article>
+                            <article class="card-menu">
                                 <div class="card-menu__text">
                                     <h4>Mousse au chocolat </h4>
                                     <h5>Au piment d'Espelette et à la truffe noire</h5>
@@ -159,7 +159,7 @@
                                 <div class="card-menu__tick">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -171,38 +171,28 @@
         <!--Footer-->
         <footer>
             <div class="footer__container">
-                <div class="footer__title">
-                    <h2>Ohmyfood</h2>
-                </div>
+                <h2 class="footer__title">Ohmyfood</h2>
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="footer__list-element footer__list-element-bold">
-                                <i class="fa-solid fa-utensils"></i>
-                                <h3>Proposer un restaurant</h3>
-                            </div>
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Proposer un restaurant</h3>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="footer__list-element footer__list-element-bold">
-                                <i class="fa-solid fa-handshake-angle"></i>
-                                <h3>Devenir partenaire</h3>
-                            </div>
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <h3>Devenir partenaire</h3>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="footer__list-element footer__list-element-normal">
-                                <h4>Mentions légales</h4>
-                            </div>
+                            <h4>Mentions légales</h4>
                         </a>
                     </li>
                     <li>
                         <a href="mailto:contact@ohmyfood.com">
-                            <div class="footer__list-element footer__list-element-normal">
-                                <h4>Contact</h4>
-                            </div>
+                            <h4>Contact</h4>
                         </a>
                     </li>
                 </ul>

@@ -1,45 +1,10 @@
-@keyframes btn-validation {
-    to {
-        transition: 300ms, ease-out
-    }
+/* Homepage */
+@keyframes body-appear {
+   to {
+      opacity: 1;
+   }
 }
-@keyframes menu-appear {
-    0% {
-       opacity: 0;
-    }
-    20% {
-       opacity: 0.6;
-    }
-    30% {
-       opacity: 0.7;
-    }
-    40%, 100% {
-       opacity: 1;
-    }
- }
- @keyframes selection-tick { /* MIEUX AVEC TRANSLATE MAIS NE DEPLACE PAS LES COLONNES DE GAUCHE */
-   to {
-      margin-right: 0px; 
-   }
- }
- @keyframes selection-tick2 { /* MIEUX AVEC TRANSLATE MAIS NE DEPLACE PAS LES COLONNES DE GAUCHE */
-   to {
-      transform: translateX(-100%);
-      transition: transform 1s 100ms forwards;
-   }
- }
- @keyframes price-translate {
-   to {
-      transform: translateX(-59px);
-   }
- }
- @keyframes selection-tick-off {
-   to {
-      margin-right: -59px;
-      transition: transform 1s 100ms forwards;
-   }
- }
-@keyframes loading-spinner {
+ @keyframes loading-spinner {
    0% {
       opacity: 0.5;
    }
@@ -79,8 +44,35 @@
       opacity: 0;
    }
 }
-@keyframes body-appear {
-   to {
+/* Menu Page */
+@keyframes menu-appear {
+   0% {
+      opacity: 0;
+   }
+   20% {
+      opacity: 0.6;
+   }
+   30% {
+      opacity: 0.7;
+   }
+   40%, 100% {
       opacity: 1;
    }
 }
+ @keyframes selection-tick { /* MIEUX AVEC TRANSLATE MAIS NE DEPLACE PAS LES COLONNES DE GAUCHE */
+   to {
+      margin-right: 0px; 
+   }
+ }
+ @keyframes price-translate {
+   to {
+      transform: translateX(-59px);
+   }
+ }
+ @keyframes selection-tick-off {
+   to {
+      margin-right: -59px;
+      transition: transform 1s 100ms;
+   }
+ }
+

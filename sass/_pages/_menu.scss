@@ -1,14 +1,12 @@
 /* Menu Page */
-/* Main */
 /* Hero */
 .hero-menu-page {
     &-image {
         width: 100%;
         height: 275px;
-        object-fit: cover;
+        object-fit:cover;
         @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
             height: 383px;
-            top: 96px;
         }
     }
 }
@@ -17,33 +15,31 @@
     width: 100%;
     max-width: 1440px;
     background-color: $color-background;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
     padding-bottom: 40px;
-    position: relative;
-    bottom: 15px;
+    position: absolute;
+    top: 283px;
     margin: auto;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        top: 439px;
+    }
     &__title {
-        width: 315px;
         height: 27px;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        padding-top: 32px;
-        padding-bottom: 40px;
+        justify-content: center;
+        padding: 32px 40px 40px 20px;
         margin: auto;
     }
     &__global-container {
+        max-width: 634px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 25px;
         margin: auto;
-        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-            max-width: 634px;
-        }
     } 
-    &__container-1 { /* REPETITIONS, A MODIFIER */
+    &__container-1 {
         @include menu-container;
         animation: menu-appear 3s 1s both ease-out;
     }
@@ -56,15 +52,14 @@
         animation: menu-appear 3s 3s both ease-out;
     }
     &__subtitle {
-        width: 275px;
-        height: 24px;
         padding-left: 10px;
         margin: 0px;
-        &-border { /* NOMENCLATURE A MODIFIER?*/
+        &-border {
             width: 38px;
             height: 3px;
             background-color: $color-tertiary;
             margin-left: 10px;
+            margin-bottom: 5px;
         }
     }
     &__cards-container {
@@ -75,10 +70,10 @@
         margin: 10px;
     }
     &__btn-validate {
-        width: 186px;
-        height: 50px;
+        width: 218px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
+        animation: menu-appear 3s 4s both ease-out;
     }
 }

@@ -6,9 +6,7 @@
     align-items: center;
     justify-content: center;
     gap:5px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position: fixed;
     &__ball1 {
         @include spinner-ball;
         background-color: $color-primary;

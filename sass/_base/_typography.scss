@@ -7,9 +7,10 @@ h1, .menu__title h2, footer h2 { /* Logo */
     font-family: Shrikhand;
     font-style: italic;
 }
-
+h1 {
+    font-size: 30px;
+}
 /* Homepage */
-/* Main */
 /* Hero Block */
 .hero {
     h3 {
@@ -29,9 +30,7 @@ h1, .menu__title h2, footer h2 { /* Logo */
         font-weight: 300;
     }
 }
-
 /* Menu page */
-/* Main */
 /* Menu Block */
 .menu {
     &__subtitle { /* Entrées, Plats, Desserts */
@@ -42,19 +41,9 @@ h1, .menu__title h2, footer h2 { /* Logo */
 /* Menu card */
 .card-menu {
     &__text {
-        h4 { /* Nom du plat */
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow-wrap: normal;
-            overflow: hidden;
-        }
         h5 { /* Précisions plat */
             font-size: 15px;
             font-weight: 300;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow-wrap: normal;
-            overflow: hidden;
         }
     }
     &__price {
@@ -63,7 +52,6 @@ h1, .menu__title h2, footer h2 { /* Logo */
         }
     }
 }
-
 /* Footer */
 footer {
     h2 { /* Oh my food du footer*/
@@ -76,7 +64,7 @@ footer {
     }
     h4 { /* Mentions légales & Contact */
         font-weight: 400;
-        color: $color-typo-footer;    
+        color: $color-typo-footer;  
     }
 }
 

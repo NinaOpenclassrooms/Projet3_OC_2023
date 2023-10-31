@@ -1,34 +1,26 @@
+body {
+    margin: 0px;
+}
 /* Header*/
-.header {
-    &__container {
-        width: 375px;
-        height: 63px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: auto;
-        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-            width: auto;
-            height: 96px;
-            max-width: 1440px;
-            max-height: 96px;
-        }
+header {
+    height: 63px;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        width: auto;
+        height: 96px;
     }
+}
+.header {
     &__logo {
-        width: 200px;
-        height: 36px;
         margin: auto;
-
     }
     &__goback-icon {
-        width: 30px;
-        height: 30px;
         position: absolute;
         left: 17px;
-        font-size: 16px;
-        text-align: center;
-        line-height: 30px;
-        border: 1px solid white;
+        font-size: 18px;
         a:visited {
             color: black;
         }

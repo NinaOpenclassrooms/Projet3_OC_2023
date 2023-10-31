@@ -22,7 +22,7 @@
     }
 }
 /* Main */
-.main-homepage { /* A MODIFIER?*/
+.main-homepage {
     background-color: $color-background;
 }
 /* Hero Block */
@@ -35,16 +35,15 @@
     background-color: $color-background;
     margin-bottom: 20px;
     &__title { 
-        width: 60%; /* EST-CE OK? */
+        width: 60%; /* EST-CE OK, A ENLEVER? */
         text-align: center;
         @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
             width: 100%;
-            font-size: 40px;
-            line-height: 44px;
+            font-size: 40px; /* A ENLEVER?*/
         }
     }
     &__paragraph {
-        width: 80%; /* EST-CE OK? */
+        width: 80%; /* EST-CE OK, A ENLEVER? */
         position: relative;
         bottom: 15px;
     }
@@ -73,7 +72,7 @@
         gap: 40px;
         margin-left: 32.5px;
         margin-right: 32.5px;
-        @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
+        @media only screen and (min-width: 1024px) { /* ordinateurs */
             justify-content: flex-start;
         }
     }
@@ -94,7 +93,6 @@
             justify-content: center;
             border-radius: 50%;
             background-color: $color-primary;
-            border-radius: 50%;
             z-index: 2;
             position: relative;
             right: 12px;

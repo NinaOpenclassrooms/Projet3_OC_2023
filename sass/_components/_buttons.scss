@@ -9,22 +9,20 @@
     border: none;
     border-radius: 25px;
     box-shadow: 0px 4px 10px 0px $color-shadow;
+    margin: auto;
     transition: all 300ms ease-out;
     &:hover {
         opacity: 0.8;
         box-shadow: 0px 4px 10px 0px $color-shadow-btn-validate-dark;
     }
 }
-
 /* Heart Like */
 .heart {
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
+    width: max-content;
     font-size: 22px;
+    margin-left: 10px;
     &:active, &:hover {
-        .hear__full {
+        .heart__full {
             opacity: 1;
             transition: opacity 1s ease-out;  
         }
@@ -33,19 +31,8 @@
             transition: opacity 500ms ease-out; 
         }
     }
-    @media only screen and (min-width: 768px) { /* tablettes et ordinateurs */
-        &:hover {
-            .heart__full {
-                opacity: 1;
-                transition: opacity 1s ease-out;
-            }
-            .heart__empty {
-                opacity: 0;
-                transition: opacity 500ms ease-out; 
-            }
-        }
-    }
     &__full {
+        width: max-content;
         background: $color-background-btn-validate;
         background-clip: text;
         -webkit-background-clip: text;
@@ -55,6 +42,7 @@
         transition: opacity 500ms ease-out;
     }
     &__empty {
+        width: max-content;
         color: black;
         opacity: 1;
         z-index: 2;
