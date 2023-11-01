@@ -57,9 +57,11 @@
             margin: 0px;
         }
     }
-}
-.card-restaurant > .heart { /* A REVOIR, METTRE COEUR EN POSITION ABSOLUTE DE LA GAUCHE? */
-    border: 3px solid red;
+    & .heart {
+        position: absolute;
+        right: 50px;
+        bottom: 12px;
+    }
 }
 /* Menu Page */
 /* Menu card */
@@ -98,6 +100,9 @@
             text-overflow: ellipsis;
             overflow-wrap: normal;
             overflow: hidden;
+        }
+        h5 {
+            padding-top: 6px;
         }
     }
     &__price {

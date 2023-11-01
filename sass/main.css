@@ -18,6 +18,7 @@
 h1, .menu__title h2, footer h2 { /* Logo */
   font-family: Shrikhand;
   font-style: italic;
+  font-weight: 400;
 }
 
 h1 {
@@ -43,7 +44,11 @@ h1 {
 
 /* Menu page */
 /* Menu Block */
+.menu__title {
+  font-size: 20px;
+}
 .menu__subtitle { /* Entrées, Plats, Desserts */
+  font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -59,7 +64,7 @@ h1 {
 
 /* Footer */
 footer h2 { /* Oh my food du footer*/
-  font-weight: 400;
+  font-size: 18px;
   color: white;
 }
 footer h3 { /* Proposer un restaurant & Devenir partenaire */
@@ -132,22 +137,6 @@ footer h4 { /* Mentions légales & Contact */
     opacity: 1;
   }
 }
-@keyframes selection-tick { /* MIEUX AVEC TRANSLATE MAIS NE DEPLACE PAS LES COLONNES DE GAUCHE */
-  to {
-    margin-right: 0px;
-  }
-}
-@keyframes price-translate {
-  to {
-    transform: translateX(-59px);
-  }
-}
-@keyframes selection-tick-off {
-  to {
-    margin-right: -59px;
-    transition: transform 1s 100ms;
-  }
-}
 body {
   margin: 0px;
 }
@@ -185,11 +174,14 @@ footer {
   padding-bottom: 10px;
 }
 
+.footer__title {
+  margin-right: 30px;
+}
 .footer__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px 0px 30px 30px;
+  padding: 15px 0px 20px 30px;
   /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
@@ -230,9 +222,6 @@ footer {
 }
 .footer__container ul a h3, .footer__container ul a h4 {
   margin: 0px;
-}
-.footer__title {
-  margin-right: 30px;
 }
 
 .spinner {
@@ -293,8 +282,8 @@ footer {
 .heart {
   width: -moz-max-content;
   width: max-content;
-  font-size: 22px;
-  margin-left: 10px;
+  font-size: 24px;
+  margin-left: 40px;
 }
 .heart:active .heart__full, .heart:hover .heart__full {
   opacity: 1;
@@ -388,9 +377,10 @@ footer {
 .card-restaurant__text h4 {
   margin: 0px;
 }
-
-.card-restaurant > .heart { /* A REVOIR, METTRE COEUR EN POSITION ABSOLUTE DE LA GAUCHE? */
-  border: 3px solid red;
+.card-restaurant .heart {
+  position: absolute;
+  right: 50px;
+  bottom: 12px;
 }
 
 /* Menu Page */
@@ -432,6 +422,9 @@ footer {
   text-overflow: ellipsis;
   overflow-wrap: normal;
   overflow: hidden;
+}
+.card-menu__text h5 {
+  padding-top: 6px;
 }
 .card-menu__price {
   width: 20%;
@@ -675,7 +668,6 @@ footer {
   margin: auto;
 }
 .menu__container-1 {
-  /* A REDUIRE */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -685,7 +677,6 @@ footer {
   animation: menu-appear 3s 1s both ease-out;
 }
 .menu__container-2 {
-  /* A REDUIRE */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -695,7 +686,6 @@ footer {
   animation: menu-appear 3s 2s both ease-out;
 }
 .menu__container-3 {
-  /* A REDUIRE */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -709,7 +699,7 @@ footer {
   margin: 0px;
 }
 .menu__subtitle-border {
-  width: 38px;
+  width: 40px;
   height: 3px;
   background-color: #99E2D0;
   margin-left: 10px;

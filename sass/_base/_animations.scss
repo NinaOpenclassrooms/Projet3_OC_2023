@@ -4,7 +4,7 @@
       opacity: 1;
    }
 }
- @keyframes loading-spinner {
+@keyframes loading-spinner {
    0% {
       opacity: 0.5;
    }
@@ -59,20 +59,3 @@
       opacity: 1;
    }
 }
- @keyframes selection-tick { /* MIEUX AVEC TRANSLATE MAIS NE DEPLACE PAS LES COLONNES DE GAUCHE */
-   to {
-      margin-right: 0px; 
-   }
- }
- @keyframes price-translate {
-   to {
-      transform: translateX(-59px);
-   }
- }
- @keyframes selection-tick-off {
-   to {
-      margin-right: -59px;
-      transition: transform 1s 100ms;
-   }
- }
-

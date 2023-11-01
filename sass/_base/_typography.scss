@@ -6,6 +6,7 @@
 h1, .menu__title h2, footer h2 { /* Logo */
     font-family: Shrikhand;
     font-style: italic;
+    font-weight: 400;
 }
 h1 {
     font-size: 30px;
@@ -33,7 +34,11 @@ h1 {
 /* Menu page */
 /* Menu Block */
 .menu {
+    &__title {
+        font-size: 20px;
+    }
     &__subtitle { /* Entrées, Plats, Desserts */
+        font-size: 16px;
         font-weight: 300;
         text-transform: uppercase;
     }
@@ -55,7 +60,7 @@ h1 {
 /* Footer */
 footer {
     h2 { /* Oh my food du footer*/
-        font-weight: 400;
+        font-size: 18px;
         color: $color-typo-footer;
     }
     h3 { /* Proposer un restaurant & Devenir partenaire */
