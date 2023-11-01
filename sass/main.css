@@ -393,21 +393,21 @@ footer {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.card-menu:hover {
+.card-menu:hover, .card-menu:active {
   cursor: pointer;
 }
-.card-menu:hover .card-menu__text {
+.card-menu:hover .card-menu__text, .card-menu:active .card-menu__text {
   width: 70%;
   transition: all 1s ease;
 }
-.card-menu:hover .card-menu__text h4, .card-menu:hover .card-menu__text h5 {
+.card-menu:hover .card-menu__text h4, .card-menu:hover .card-menu__text h5, .card-menu:active .card-menu__text h4, .card-menu:active .card-menu__text h5 {
   white-space: nowrap;
 }
-.card-menu:hover .card-menu__tick {
+.card-menu:hover .card-menu__tick, .card-menu:active .card-menu__tick {
   width: 10%;
   transition: all 1s ease;
 }
-.card-menu:hover .card-menu__tick i {
+.card-menu:hover .card-menu__tick i, .card-menu:active .card-menu__tick i {
   transform: rotate(360deg);
   transition: transform 1s 200ms;
 }
