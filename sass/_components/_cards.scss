@@ -75,14 +75,14 @@
     &:hover, &:active {
         cursor: pointer;
         .card-menu__text {
-            width: 70%;
+            width: 60%;
             transition: all 1s ease;
             h4, h5 {
                 white-space: nowrap;
             }
         }
         .card-menu__tick {
-            width: 10%;
+            width: 20%;
             transition: all 1s ease;
             i {
                 transform: rotate(360deg);
@@ -96,9 +96,7 @@
         padding: 12px;
         h4, h5 {
             margin: 0px;
-            white-space: normal;
             text-overflow: ellipsis;
-            overflow-wrap: normal;
             overflow: hidden;
         }
         h5 {

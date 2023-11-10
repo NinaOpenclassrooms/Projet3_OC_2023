@@ -148,9 +148,10 @@ header {
   display: flex;
   align-items: center;
   margin: auto;
+  /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
-  header { /* tablettes et ordinateurs */
+  header {
     width: auto;
     height: 96px;
   }
@@ -418,9 +419,7 @@ footer {
 }
 .card-menu__text h4, .card-menu__text h5 {
   margin: 0px;
-  white-space: normal;
   text-overflow: ellipsis;
-  overflow-wrap: normal;
   overflow: hidden;
 }
 .card-menu__text h5 {
@@ -498,17 +497,18 @@ footer {
   margin-bottom: 20px;
 }
 .hero__title {
-  width: 60%; /* EST-CE OK, A ENLEVER? */
+  width: 60%;
   text-align: center;
+  /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
-  .hero__title { /* tablettes et ordinateurs */
+  .hero__title {
     width: 100%;
     font-size: 40px; /* A ENLEVER?*/
   }
 }
 .hero__paragraph {
-  width: 80%; /* EST-CE OK, A ENLEVER? */
+  width: 80%;
   position: relative;
   bottom: 15px;
 }
@@ -521,9 +521,10 @@ footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 44px;
+  /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
-  .tuto__container { /* tablettes et ordinateurs */
+  .tuto__container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -541,11 +542,6 @@ footer {
   gap: 40px;
   margin-left: 32.5px;
   margin-right: 32.5px;
-}
-@media only screen and (min-width: 1024px) {
-  .tuto__cards-container { /* ordinateurs */
-    justify-content: flex-start;
-  }
 }
 .tuto__card {
   width: 322px;
@@ -594,9 +590,10 @@ footer {
 /* Restaurants Block */
 .restaurants {
   padding-bottom: 80px;
+  /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
-  .restaurants { /* tablettes et ordinateurs */
+  .restaurants {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -614,9 +611,10 @@ footer {
   justify-content: space-between;
   gap: 18px;
   margin: auto;
+  /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
-  .restaurants__cards-container { /* tablettes et ordinateurs */
+  .restaurants__cards-container {
     gap: 50px;
   }
 }
@@ -628,9 +626,10 @@ footer {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
+  /* tablettes et ordinateurs */
 }
 @media only screen and (min-width: 768px) {
-  .hero-menu-page-image { /* tablettes et ordinateurs */
+  .hero-menu-page-image {
     height: 383px;
   }
 }
@@ -645,9 +644,6 @@ footer {
   position: relative;
   margin: auto;
   margin-top: -40px;
-}
-@media only screen and (min-width: 768px) {
-  .menu { /* tablettes et ordinateurs */ }
 }
 .menu__title {
   height: 27px;
