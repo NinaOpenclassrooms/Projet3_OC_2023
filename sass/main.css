@@ -397,14 +397,14 @@ footer {
   cursor: pointer;
 }
 .card-menu:hover .card-menu__text, .card-menu:active .card-menu__text {
-  width: 70%;
+  width: 60%;
   transition: all 1s ease;
 }
 .card-menu:hover .card-menu__text h4, .card-menu:hover .card-menu__text h5, .card-menu:active .card-menu__text h4, .card-menu:active .card-menu__text h5 {
   white-space: nowrap;
 }
 .card-menu:hover .card-menu__tick, .card-menu:active .card-menu__tick {
-  width: 10%;
+  width: 20%;
   transition: all 1s ease;
 }
 .card-menu:hover .card-menu__tick i, .card-menu:active .card-menu__tick i {
@@ -642,14 +642,12 @@ footer {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
   padding-bottom: 40px;
-  position: absolute;
-  top: 283px;
+  position: relative;
   margin: auto;
+  margin-top: -40px;
 }
 @media only screen and (min-width: 768px) {
-  .menu { /* tablettes et ordinateurs */
-    top: 439px;
-  }
+  .menu { /* tablettes et ordinateurs */ }
 }
 .menu__title {
   height: 27px;
