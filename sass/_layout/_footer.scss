@@ -12,8 +12,8 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         padding: 15px 0px 20px 30px;
-        /* tablettes et ordinateurs */
-        @media only screen and (min-width: 768px) { 
+        /* ordinateurs */
+        @media only screen and (min-width: 1024px) { 
             flex-direction: row-reverse;
             align-items: last baseline;
             max-width: 1440px;
@@ -27,8 +27,8 @@ footer {
             list-style-type: none;
             padding-left: 0px;
             margin-right: 50px;
-            /* tablettes et ordinateurs */
-            @media only screen and (min-width: 768px) { 
+            /* ordinateurs */
+            @media only screen and (min-width: 1024px) { 
                 flex-direction: row;
             }
             li {
