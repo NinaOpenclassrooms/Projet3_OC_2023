@@ -1,5 +1,5 @@
 # Projet3_OC_2023
-Dans le cadre du parcours Développeur web de Openclassrooms, ce troisième projet met l'accent sur l'intégration d'animations dynamiques de type CSS pour l'entreprise Ohmyfood.
+Dans le cadre du parcours Développeur web de Openclassrooms, ce troisième projet met l'accent sur l'intégration d'animations dynamiques en CSS pour l'entreprise Ohmyfood.
 
 Le code est développé en HTML et CSS avec l'utilisation de l'architecture 7:1 de Sass.
 
